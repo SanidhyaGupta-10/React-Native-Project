@@ -5,11 +5,6 @@ It features **real-time synchronization**, **persistent theming**, and a **clean
 
 ---
 
-## 🚀 Live Demo
-👉 _Add your demo link here_
-
----
-
 ## ✨ Features
 
 - ✅ **Full CRUD Operations**  
