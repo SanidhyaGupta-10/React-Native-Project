@@ -10,4 +10,3 @@ export default function RootLayout() {
     </ThemeProvider>
   )
 }
-// But in new Expo RN these not compulsory it handles it own

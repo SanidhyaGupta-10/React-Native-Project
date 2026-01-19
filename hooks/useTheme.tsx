@@ -3,6 +3,7 @@ import { createContext, ReactNode, useContext, useEffect, useState } from "react
 
 // AsyncStorage is React Native’s simple, promise-based API for persisting small bits of data on a user’s device. Think of it as the mobile-app equivalent of the browser’s localStorage, but asynchronous and cross-platform.
 
+// Interface of Light and Dark Scheme Colors
 export interface ColorScheme {
   bg: string;
   surface: string;
@@ -87,6 +88,7 @@ const darkColors: ColorScheme = {
   statusBarStyle: "light-content" as const,
 };
 
+// Interface of Theme Context
 interface ThemeContextType {
   isDarkMode: boolean;
   toggleDarkMode: () => void;
@@ -95,6 +97,7 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
+// ThemeProvider
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -109,7 +112,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     setIsDarkMode(newMode);
     await AsyncStorage.setItem("darkMode", JSON.stringify(newMode));
   };
-
+ 
   const colors = isDarkMode ? darkColors : lightColors;
 
   return (
