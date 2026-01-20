@@ -6,12 +6,11 @@ import { useTheme } from '@/hooks/useTheme';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import ProgressStats from '@/components/ProgressStats';
+import Preferences from '@/components/Preferences';
+import DangerZone from '@/components/DangerZone';
 
 const settings = () => {
-    const [isAutoSync, setIsAutoSync] = useState(true);
-    const [isNotificationEnabled, setIsNotificationEnabled] = useState(true);
-
-    const { colors, } = useTheme();
+    const { colors } = useTheme();
     const settingStyles = createSettingsStyles(colors);
 
     return (
@@ -25,7 +24,6 @@ const settings = () => {
                         <LinearGradient colors={colors.gradients.primary} style={settingStyles.iconContainer}>
                             <Ionicons name='settings' size={28} color={colors.textOnPrimary} />
                         </LinearGradient>
-                        <Text style={settingStyles.title}>Today&apos;s Tasks</Text>
                         <Text style={settingStyles.title}>
                             Settings
                         </Text>
@@ -38,6 +36,10 @@ const settings = () => {
                     showsVerticalScrollIndicator={false}
                 >
                     <ProgressStats />
+                    {/* Preferences */}
+                    <Preferences />
+
+                    <DangerZone />
                 </ScrollView>
             </SafeAreaView>
         </LinearGradient>

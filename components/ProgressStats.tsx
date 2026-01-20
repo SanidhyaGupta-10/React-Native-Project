@@ -52,7 +52,7 @@ const ProgressStats = () => {
                             colors={colors.gradients.success}
                             style={settingStyles.statIcon}
                         >
-                            <Ionicons name='list' size={20} color='#fff' />
+                            <Ionicons name='checkmark-circle' size={20} color='#fff' />
                         </LinearGradient>
                     </View>
 
@@ -71,7 +71,7 @@ const ProgressStats = () => {
                             colors={colors.gradients.warning}
                             style={settingStyles.statIcon}
                         >
-                            <Ionicons name='list' size={20} color='#fff' />
+                            <Ionicons name='time' size={20} color='#fff' />
                         </LinearGradient>
                     </View>
 
