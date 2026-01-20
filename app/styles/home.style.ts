@@ -134,7 +134,7 @@ export default function createHomeStyles
       alignItems: "flex-start",
       padding: 20,
       borderRadius: 20,
-      shadowColor: "#000",
+      shadowColor: colors.shadow,
       shadowOffset: {
         width: 0,
         height: 4,
@@ -204,7 +204,7 @@ export default function createHomeStyles
       borderRadius: 12,
     },
     editButtonText: {
-      color: "#ffffff",
+      color: colors.textOnPrimary,
       fontSize: 14,
       fontWeight: "600",
     },

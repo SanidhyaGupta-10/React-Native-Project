@@ -44,7 +44,7 @@ export default function createSettingsStyles
     section: {
       borderRadius: 20,
       padding: 24,
-      shadowColor: "#000",
+      shadowColor: colors.shadow,
       shadowOffset: {
         width: 0,
         height: 4,

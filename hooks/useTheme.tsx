@@ -30,6 +30,7 @@ export interface ColorScheme {
     editInput: string;
   };
   statusBarStyle: "light-content" | "dark-content";
+  textOnPrimary: string;
 }
 
 const lightColors: ColorScheme = {
@@ -58,6 +59,7 @@ const lightColors: ColorScheme = {
     editInput: "#ffffff",
   },
   statusBarStyle: "dark-content" as const,
+  textOnPrimary: "#ffffff",
 };
 
 const darkColors: ColorScheme = {
@@ -86,6 +88,7 @@ const darkColors: ColorScheme = {
     editInput: "#0f172a",
   },
   statusBarStyle: "light-content" as const,
+  textOnPrimary: "#ffffff",
 };
 
 // Interface of Theme Context

@@ -20,7 +20,7 @@ const Header = () => {
     <View style={homeStyles.header}>
       <View style={homeStyles.titleContainer}>
         <LinearGradient colors={colors.gradients.primary} style={homeStyles.iconContainer}>
-          <Ionicons name='flash-outline' size={28} color='#fff' />
+          <Ionicons name='flash-outline' size={28} color={colors.textOnPrimary} />
         </LinearGradient>
 
         <View style={homeStyles.titleTextContainer}>
